@@ -11,20 +11,23 @@ The app was built using:
 - docker
 - Nginx
 - AWS free tier
+
+
  installation
 =============
+
 **prerequisites**:
 - kubernetes
-- docker
->docker is usualy installed as part of the kubernetes deployment (microk8s\minikube etc')
+- docker (if not included with the kubernetes distro already)
 - TCP ports 80/31000 open for network browser access
 **RUN **
 1. clone this branch : 
 git clone https://github.com/stav-sheen/Snake-kube.git
+
 2. apply deployment yaml to start podsand run app:
-`kubectl apply -f service.yml`
+ `kubectl apply -f service.yml`
 3. apply service yaml to start networking:
-`kubectl apply -f service.yml`
+ `kubectl apply -f service.yml`
 4. use the following command to see pods are running and all is well:
-`kubectl get pods`
+ `kubectl get pods`
 
