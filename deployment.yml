@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: snake-js
+  labels:
+    app: snake-js
+spec:
+  replicas: 2
+  selector:
+   matchLabels:
+     app: snake-js
+  template:
+    metadata:
+     labels:
+      app: snake-js
+    spec:
+      containers:
+      - name: snake-js
+        image: stavsheen/snakerz:1.0
+        ports:
+        - containerPort: 80
