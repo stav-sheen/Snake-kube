@@ -4,6 +4,7 @@ a simple Nginx web game of snake.
 based on docker image and kubernetes single node cluster. 
 the image can be found on dockerhub : 
 https://hub.docker.com/repository/docker/stavsheen/snakerz
+
 General Info
 -------------
 The app was built using:
