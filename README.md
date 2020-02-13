@@ -20,6 +20,7 @@ The app was built using:
 - kubernetes
 - docker (if not included with the kubernetes distro already)
 - TCP ports 80/31000 open for network browser access
+
 **RUN **
 1. clone this branch : 
 git clone https://github.com/stav-sheen/Snake-kube.git
